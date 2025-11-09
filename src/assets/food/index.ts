@@ -8,12 +8,12 @@ import butterChicken from './butter-chicken.jpg';
 import chai from './chai.jpg';
 
 export const foodImages: Record<string, string> = {
-  'veg-thali': vegThali,
-  'samosa': samosa,
-  'idli': idli,
-  'dosa': dosa,
-  'biryani': biryani,
-  'paneer-tikka': paneerTikka,
-  'butter-chicken': butterChicken,
-  'chai': chai,
+  '/src/assets/food/veg-thali.jpg': vegThali,
+  '/src/assets/food/samosa.jpg': samosa,
+  '/src/assets/food/idli.jpg': idli,
+  '/src/assets/food/dosa.jpg': dosa,
+  '/src/assets/food/biryani.jpg': biryani,
+  '/src/assets/food/paneer-tikka.jpg': paneerTikka,
+  '/src/assets/food/butter-chicken.jpg': butterChicken,
+  '/src/assets/food/chai.jpg': chai,
 };

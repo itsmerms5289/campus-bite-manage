@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { foodImages } from "@/assets/food";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -260,9 +261,9 @@ const StudentDashboard = () => {
             {filteredItems.map((item) => (
               <Card key={item.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <CardHeader className="p-0">
-                  <div className="h-48 bg-gradient-to-br from-secondary to-accent flex items-center justify-center">
-                    {item.image_url ? (
-                      <img src={item.image_url} alt={item.name} className="w-full h-full object-cover" />
+                  <div className="h-48 bg-gradient-to-br from-secondary to-accent flex items-center justify-center overflow-hidden">
+                    {item.image_url && foodImages[item.image_url] ? (
+                      <img src={foodImages[item.image_url]} alt={item.name} className="w-full h-full object-cover" />
                     ) : (
                       <Drumstick className="h-16 w-16 text-muted-foreground" />
                     )}
